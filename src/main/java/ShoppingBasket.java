@@ -9,7 +9,8 @@ public class ShoppingBasket {
 
     public double getTotal() {
         return items.stream()
-                .mapToDouble(Item::getPrice)
+                .mapToDouble(Item::getSubTotal)
                 .sum();
     }
+
 }
