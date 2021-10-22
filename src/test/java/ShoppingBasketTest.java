@@ -22,4 +22,10 @@ public class ShoppingBasketTest {
         ShoppingBasket basket = new ShoppingBasket(asList(new Item(200.00, 1)));
         assertEquals(200.00, basket.getTotal(), 0.00);
     }
+
+    @Test
+    public void totalOfTwoItemsInBasketWithDifferentPrices() {
+        ShoppingBasket basket = new ShoppingBasket(asList(new Item(100.00, 1), new Item(50.00, 1)));
+        assertEquals(150.00, basket.getTotal(), 0.00);
+    }
 }
