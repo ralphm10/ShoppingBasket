@@ -12,6 +12,6 @@ public class ShoppingBasket {
         if (items.isEmpty()) {
             return 0;
         }
-        return 100.00;
+        return items.get(0).getPrice();
     }
 }
